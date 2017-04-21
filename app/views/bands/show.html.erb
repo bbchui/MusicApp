@@ -1,0 +1,5 @@
+<%= @band.name %>
+<% @band.albums.each do |album| %>
+<%  next unless album %>
+<%= album.name %>
+<% end %>
